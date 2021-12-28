@@ -8,6 +8,7 @@ import Heading from '../../components/Heading';
 import Title from '../../components/Title';
 import CategoryList from '../../components/CategoryList';
 import StreamList from '../../components/StreamList';
+import ChannelList from '../../components/ChannelList';
 
 interface Item {
   key: string;
@@ -47,7 +48,7 @@ function Following() {
       },
       {
         key: 'C3',
-        render: () => <View></View>,
+        render: () => <StreamList />,
       },
       {
         key: 'OFFILINE_CHANNELS',
@@ -56,7 +57,7 @@ function Following() {
       },
       {
         key: 'C4',
-        render: () => <View></View>,
+        render: () => <ChannelList />,
       },
     ]
 
